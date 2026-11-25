@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-badge">SP</span>
+        <div>
+          <h1>CampusHub</h1>
+          <p class="muted">Fall Term 2026</p>
+        </div>
+      </div>
+
+      <nav class="nav-list" aria-label="Primary Navigation">
+        <button class="nav-item active" data-view="dashboard">Dashboard</button>
+        <button class="nav-item" data-view="schedule">Class Schedule</button>
+        <button class="nav-item" data-view="grades">Grades</button>
+        <button class="nav-item" data-view="announcements">Announcements</button>
+        <button class="nav-item" data-view="profile">Student Profile</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="btn btn-secondary btn-sm" id="resetDataBtn">Reset Demo Data</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">?</button>
+        <h2 id="pageTitle">Dashboard</h2>
+        <div class="user-chip" id="topbarUser"></div>
+      </header>
+
+      <section id="viewContainer" class="view-container"></section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
